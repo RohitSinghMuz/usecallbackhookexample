@@ -1,11 +1,20 @@
 import React from "react";
-import Home from "./Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Hochome from "./Hochome";
+import Hocservice from "./Hocservice";
+import Navbar from "./Navbar";
 
 const App = () => {
   return (
-    <div>
-      <Home />
-    </div>
+    <>
+      <BrowserRouter>
+        <Navbar/>
+        <Routes>
+          <Route path="" element={<Hochome />} />
+          <Route path="/service" element={<Hocservice />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 };
 

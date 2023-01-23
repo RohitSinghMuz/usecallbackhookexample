@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import Child from "./Child";
+import Child from "../Child";
 
 const Home = () => {
   const [count, setCount] = useState(0);
